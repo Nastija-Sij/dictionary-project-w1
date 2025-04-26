@@ -1,5 +1,5 @@
-import './App.css';
-import Dictionary from './Dictionary';
+import "./App.css";
+import Dictionary from "./Dictionary";
 
 function App() {
   return (
@@ -9,7 +9,13 @@ function App() {
         <main>
           <Dictionary />
         </main>
-        <footer className="App-footer" >Coded by N. Sij</footer>
+        <footer className="App-footer">
+          Coded by{" "}
+          <a src="https://github.com/Nastija-Sij" target="_blank">
+            {" "}
+            Nastija Sij
+          </a>
+        </footer>
       </div>
     </div>
   );
