@@ -24,6 +24,10 @@ h2 {
   padding: 10px 10px;
   border-radius: 7px;
 }
+.phonetic {
+  font-style: italic;
+  font-weight: 250;
+}
 .Meaning {
   background-color: rgba(223, 214, 153, 0.259);
   border-radius: 7px;
