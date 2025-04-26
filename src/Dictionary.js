@@ -15,7 +15,12 @@ export default function Dictionary() {
     event.preventDefault();
 
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-    axios.get(apiUrl).then(handleResponse).catch(function (error) {console.error("API error:", error);});
+    axios
+      .get(apiUrl)
+      .then(handleResponse)
+      .catch(function (error) {
+        console.error("API error:", error);
+      });
     /* https://api.dictionaryapi.dev/api/v2/entries/en/<word> */
   }
 
@@ -28,7 +33,6 @@ export default function Dictionary() {
     <div className="Dictionary">
       <form onSubmit={search}>
         <input type="search" autofocus={true} onChange={handleKeywordChange} />
-        <input type="submit" />
       </form>
 
       <Results results={result} />

@@ -1,11 +1,39 @@
-
 .App-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+
   color: rgb(0, 0, 0);
 }
-
-
+.container {
+  max-width: 700px;
+}
+.App-header {
+  margin: 60px auto 30px auto;
+  font-size: 40px;
+}
+form {
+  display: flex;
+  justify-content: center;
+  padding: 10px 5px;
+}
+h2 {
+  background-color: rgba(223, 214, 153, 0.559);
+  margin-top: 20px;
+  padding: 10px 10px;
+  border-radius: 7px;
+}
+.Meaning {
+  background-color: rgba(223, 214, 153, 0.259);
+  border-radius: 7px;
+  padding: 20px 20px;
+  margin-top: 40px;
+}
+.App-footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 60px auto 30px auto;
+  color: rgb(69, 69, 69);
+}

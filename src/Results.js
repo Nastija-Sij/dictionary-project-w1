@@ -8,22 +8,22 @@ export default function Results(props) {
     return (
       <div className="Results">
         <h2>{props.results.word}</h2>
-        <h4>{props.results.phonetic}</h4>
+        <h5>{props.results.phonetic}</h5>
+        <div className="definition-section">
+          {props.results.meanings.map(function (meaning, index) {
+            /*console.log("meaning:", meaning);*/
 
-        {props.results.meanings.map(function (meaning, index) {
-          /*console.log("meaning:", meaning);*/
+            if (!Array.isArray(meaning.definitions)) {
+              return <p key={index}>No definitions available.</p>;
+            }
 
-          if (!Array.isArray(meaning.definitions)) {
-            return <p key={index}>No definitions available.</p>;
-          }
-
-          return (
-            <div key={index}>
+            return (
+              <div key={index}>
                 <Meaning meaning={meaning} />
-              
-            </div>
-          );
-        })}
+              </div>
+            );
+          })}
+        </div>
       </div>
     );
   } else {
