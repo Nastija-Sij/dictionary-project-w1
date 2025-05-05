@@ -1,3 +1,6 @@
+body {
+  background-color: rgba(237, 237, 186, 0.279);
+}
 .App-header {
   display: flex;
   flex-direction: column;
@@ -13,10 +16,30 @@
   margin: 60px auto 30px auto;
   font-size: 40px;
 }
+.Dictionary {
+  border: solid 1px rgb(228, 228, 228);
+  border-radius: 14px;
+  padding: 40px;
+  background-color: rgba(228, 228, 228, 0.655);
+  box-shadow: 5px 3px 5px 5px rgb(0, 0, 0, 0.2);
+}
+
 form {
   display: flex;
   justify-content: center;
-  padding: 10px 5px;
+}
+input {
+  padding: 10px 10px;
+  min-width: 260px;
+  border-radius: 7px;
+  border: solid 1px grey;
+}
+
+.Type-example {
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  font-size: 14px;
 }
 h2 {
   background-color: rgba(223, 214, 153, 0.559);
@@ -24,10 +47,7 @@ h2 {
   padding: 10px 10px;
   border-radius: 7px;
 }
-.phonetic {
-  font-style: italic;
-  font-weight: 250;
-}
+
 .Meaning {
   background-color: rgba(223, 214, 153, 0.259);
   border-radius: 7px;
