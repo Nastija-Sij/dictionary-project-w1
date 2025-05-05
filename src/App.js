@@ -10,9 +10,9 @@ function App() {
           <Dictionary />
         </main>
         <footer className="App-footer">
-          Coded by{" "}
+          Coded by {" "}
           <a src="https://github.com/Nastija-Sij" target="_blank">
-            {" "}
+            {"  "}
             Nastija Sij
           </a>
         </footer>
