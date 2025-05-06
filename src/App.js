@@ -11,7 +11,11 @@ function App() {
         </main>
         <footer className="App-footer">
           Coded with 🤍 by{" "}
-          <a href="https://github.com/Nastija-Sij" target="_blank">
+          <a
+            href="https://github.com/Nastija-Sij"
+            target="_blank"
+            rel="noreferrer"
+          >
             Nastija Sij
           </a>
         </footer>
