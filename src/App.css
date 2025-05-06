@@ -20,7 +20,7 @@ body {
   border: solid 1px rgb(228, 228, 228);
   border-radius: 14px;
   padding: 40px;
-  background-color: rgba(228, 228, 228, 0.655);
+  background-color: rgba(255, 255, 255, 0.655);
   box-shadow: 5px 3px 5px 5px rgb(0, 0, 0, 0.2);
 }
 
@@ -42,10 +42,11 @@ input {
   font-size: 14px;
 }
 h2 {
-  background-color: rgba(223, 214, 153, 0.559);
+  color: rgb(161, 147, 53);
   margin-top: 20px;
   padding: 10px 10px;
   border-radius: 7px;
+  font-size: 40px;
 }
 
 .Meaning {
