@@ -17,7 +17,6 @@ export default function Results(props) {
               </div>
             );
           })}
-          ;
         </h5>
         <div className="definition-section">
           {props.results.meanings.map(function (meaning, index) {

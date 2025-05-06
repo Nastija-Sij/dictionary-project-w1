@@ -55,6 +55,14 @@ h2 {
   padding: 20px 20px;
   margin-top: 40px;
 }
+.Photos {
+  background-color: rgba(223, 214, 153, 0.259);
+  border-radius: 7px;
+  padding: 20px 20px;
+  margin-top: 40px;
+}
+
+
 .App-footer {
   align-items: center;
   display: flex;
