@@ -15,8 +15,8 @@ export default function Dictionary(props) {
   }
 
   function handlePexelsResponse(response) {
-    console.log(response);
-    setPhotos(response.data.photos);
+    /*console.log(response);*/
+      setPhotos(response.data.photos);
   }
 
   function search() {
@@ -54,7 +54,7 @@ export default function Dictionary(props) {
 
   if (loaded) {
     return (
-      <div className="Dictionary">
+      <div className="content">
         <form onSubmit={handleSubmit}>
           <input
             type="search"
@@ -64,8 +64,12 @@ export default function Dictionary(props) {
           />
         </form>
         <p className="Type-example">For example: tree, honesty, etc...</p>
-        <Results results={result} />
-        <Photos photos={photos} />
+        <div className="Dictionary">
+          
+          <Results results={result} />
+          <hr />
+          <Photos photos={photos} />
+        </div>
       </div>
     );
   } else {

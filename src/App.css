@@ -1,27 +1,37 @@
+:root {
+  --dark-brown: #291C03;
+  --light-brown: #6e473b;
+  --beige: #a78d78;
+  --of-white: #e1d4c2;
+}
+
 body {
-  background-color: rgba(237, 237, 186, 0.279);
+  background-color: var(--beige);
+}
+a {
+  text-decoration: none;
+  color:rgb(69, 69, 69);
 }
 .App-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  color: rgb(0, 0, 0);
+font-family: 'newsreader', serif;
+  color: var(--of-white);
+  margin: 60px auto 30px auto;
+  font-size: 70px;
 }
 .container {
-  max-width: 700px;
+  max-width: 1000px;
 }
-.App-header {
-  margin: 60px auto 30px auto;
-  font-size: 40px;
-}
+
 .Dictionary {
-  border: solid 1px rgb(228, 228, 228);
-  border-radius: 14px;
+  border-radius: 6px;
   padding: 40px;
-  background-color: rgba(255, 255, 255, 0.655);
-  box-shadow: 5px 3px 5px 5px rgb(0, 0, 0, 0.2);
+  background-color: #e1d4c2c1;
+  box-shadow: 3px 3px 15px 4px rgb(0, 0, 0, 0.2);
+  font-family: 'newsreader', serif ;
 }
 
 form {
@@ -41,16 +51,16 @@ input {
   font-style: italic;
   font-size: 14px;
 }
-h2 {
-  color: rgb(161, 147, 53);
+h1 {
+  color: var(--dark-brown);
   margin-top: 20px;
   padding: 10px 10px;
   border-radius: 7px;
-  font-size: 40px;
+  font-size: 60px;
 }
 
 .Meaning {
-  background-color: rgba(223, 214, 153, 0.259);
+  
   border-radius: 7px;
   padding: 20px 20px;
   margin-top: 40px;

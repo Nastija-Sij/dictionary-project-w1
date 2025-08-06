@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <header className="App-header">Dictionary app</header>
+        <header className="App-header">Dictionary</header>
         <main>
           <Dictionary defaultKeyword="sunrise" />
         </main>
@@ -16,6 +16,7 @@ function App() {
             target="_blank"
             rel="noreferrer"
           >
+            {"  "}
             Nastija Sij
           </a>
         </footer>
