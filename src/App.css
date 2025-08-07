@@ -1,5 +1,5 @@
 :root {
-  --dark-brown: #291C03;
+  --dark-brown: #291c03;
   --light-brown: #6e473b;
   --beige: #a78d78;
   --of-white: #e1d4c2;
@@ -10,14 +10,14 @@ body {
 }
 a {
   text-decoration: none;
-  color:rgb(69, 69, 69);
+  color: rgb(69, 69, 69);
 }
 .App-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-font-family: 'newsreader', serif;
+  font-family: "newsreader", serif;
   color: var(--of-white);
   margin: 60px auto 30px auto;
   font-size: 70px;
@@ -25,32 +25,34 @@ font-family: 'newsreader', serif;
 .container {
   max-width: 1000px;
 }
-
+.Definition-block {
+  margin-top: 20px;
+}
 .Dictionary {
   border-radius: 6px;
   padding: 40px;
   background-color: #e1d4c2c1;
   box-shadow: 3px 3px 15px 4px rgb(0, 0, 0, 0.2);
-  font-family: 'newsreader', serif ;
+  font-family: "newsreader", serif;
 }
 
 form {
   display: flex;
   justify-content: center;
-}
-input {
-  padding: 10px 10px;
-  min-width: 260px;
-  border-radius: 7px;
-  border: solid 1px grey;
+  
 }
 
-.Type-example {
-  display: flex;
-  justify-content: center;
+input {
+  padding: 10px 10px;
   font-style: italic;
-  font-size: 14px;
+  min-width: 350px;
+  border-radius: 3px;
+  background-color:  #e1d4c2ce;
+  border: none;
+  margin-bottom: 50px;
 }
+
+
 h1 {
   color: var(--dark-brown);
   margin-top: 20px;
@@ -58,9 +60,10 @@ h1 {
   border-radius: 7px;
   font-size: 60px;
 }
-
+h3 {
+  font-size: 40px;
+}
 .Meaning {
-  
   border-radius: 7px;
   padding: 20px 20px;
   margin-top: 40px;
@@ -71,7 +74,6 @@ h1 {
   padding: 20px 20px;
   margin-top: 40px;
 }
-
 
 .App-footer {
   align-items: center;

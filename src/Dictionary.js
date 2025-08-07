@@ -9,6 +9,7 @@ export default function Dictionary(props) {
   let [loaded, setLoaded] = useState(false);
   let [photos, setPhotos] = useState(null);
 
+
   function handleDictionaryResponse(response) {
     /*console.log(response.data[0]);*/
     setResult(response.data[0]);
@@ -54,21 +55,22 @@ export default function Dictionary(props) {
 
   if (loaded) {
     return (
-      <div className="content">
-        <form onSubmit={handleSubmit}>
-          <input
-            type="search"
-            autofocus={true}
-            onChange={handleKeywordChange}
-            placeholder="Type in a word.."
-          />
-        </form>
-        <p className="Type-example">For example: tree, honesty, etc...</p>
-        <div className="Dictionary">
-          
-          <Results results={result} />
-          <hr />
-          <Photos photos={photos} />
+      <div className="container">
+        <div className="content">
+          <form onSubmit={handleSubmit}>
+            <input
+              type="search"
+              autofocus={true}
+              onChange={handleKeywordChange}
+              placeholder="Type in a word...e.g. Tree, Courage, etc..."
+            />
+          </form>
+
+          <div className="Dictionary">
+            <Results results={result} />
+            <hr />
+            <Photos photos={photos} />
+          </div>
         </div>
       </div>
     );

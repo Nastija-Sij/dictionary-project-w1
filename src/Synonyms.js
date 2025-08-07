@@ -20,6 +20,6 @@ export default function Synonyms(props) {
       </div>
     );
   } else {
-    return "hello from synonyms";
+    return null;
   }
 }

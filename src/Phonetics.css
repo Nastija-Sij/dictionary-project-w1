@@ -1,23 +1,33 @@
-.Phonetic a {
-  color: rgb(0, 0, 0);
-  border: 1px solid #b9b9b9;
+:root {
+  --dark-brown: #291c03;
+  --light-brown: #6e473b;
+  --beige: #a78d78;
+  --of-white: #e1d4c2;
+}
+.PhoneticText {
+  font-size: 24px;
+}
+.Link {
+  color: var(--dark-brown);
+  border: 1px solid var(--of-white);
   border-radius: 18px;
   padding: 5px 8px;
-  margin-right: 15px;
-  background-color: #ffffff;
-  box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.2);
+  margin-left: 20px;
+  background-color: var(--of-white);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .Phonetic a:hover {
-  color: rgb(255, 255, 255);
-  background-color: rgb(215, 215, 215);
+  color: var(--of-white);
+  background-color: var(--beige);
   transition: all 150ms ease-in-out;
   transform: scale(2x);
 }
 
-.Phonetic { 
+.Phonetic {
   font-size: 16px;
   font-weight: 250;
   text-decoration: none;
-  margin: 25px 0;
+  margin: 25px 15px;
 }
+

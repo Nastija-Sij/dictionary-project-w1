@@ -10,15 +10,16 @@ function App() {
           <Dictionary defaultKeyword="sunrise" />
         </main>
         <footer className="App-footer">
-          Coded with 🤍 by{" "}
-          <a
-            href="https://github.com/Nastija-Sij"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {"  "}
-            Nastija Sij
-          </a>
+          <p>
+            Coded by{" "}
+            <a
+              href="https://github.com/Nastija-Sij"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Nastija Sij
+            </a>
+          </p>
         </footer>
       </div>
     </div>
